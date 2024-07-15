@@ -1,0 +1,99 @@
+/* Import font : League Spartan  */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*, html {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --color-theme-01: #219C90;
+    --color-theme-02: #FFF455;
+    --color-theme-03: #FFC700;
+    --color-theme-04: #EE4E4E;
+    
+    --white-color:       #ffffff;
+    --dark-color:        #000000;
+    --info-color:        #666;
+    --description-color: #717275;
+
+    --twitter-color:       #1da1f2;
+    --facebook-color:      #1877f2;
+    --instagram-color:     #c13584;
+    --pinterest-color:     #e60023;
+    --whatsapp-color:      #128c7e;
+  
+    --fw-thin:             100;
+    --fw-light:            300;
+    --fw-normal:           400;
+    --fw-semibold:         600;
+    --fw-bold:             700;
+  }
+  
+
+
+/* ==============================================
+    Frequently used Class 
+================================================= */
+.lf-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+/*---------------------------------------
+  Nav Menu             
+-----------------------------------------*/
+.lf-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+.lf-nav-logo h1 {
+    color: var(--color-theme-03);
+}
+.lf-nav-logo h1 span {
+    color: var(--color-theme-01);
+}
+
+.lf-nav-menu a {
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    color: var(--info-color);
+    transition: all .25s ease;
+}
+.lf-nav-menu a:hover {
+    color: var(--white-color);
+    background-color: var(--color-theme-03);
+}
+
+.lf-nav-menu-active {
+    color: var(--white-color) !important;
+    background-color: var(--color-theme-03);
+}
+
+/* ==============================================
+    Responsive Disign 
+================================================= */
+/* @media screen and (max-width: 1280px) {
+    .lf-container { width: 1240px; }
+}
+@media screen and (max-width: 1024px) {
+    .lf-container { width: 992px; }
+}
+@media screen and (max-width: 768px) {
+    .lf-container { width: 624px; }
+}
+@media screen and (max-width: 640px) {
+    .lf-container { width: 440px; }
+} */
