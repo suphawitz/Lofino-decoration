@@ -52,11 +52,12 @@
   Nav Menu             
 -----------------------------------------*/
 .lf-nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: var(--white-color);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
 .lf-nav-logo h1 {
@@ -81,6 +82,21 @@
     color: var(--white-color) !important;
     background-color: var(--color-theme-03);
 }
+
+
+/*---------------------------------------
+    HEADER             
+-----------------------------------------*/
+.lf-hd-con {
+    width: 100%;
+    height: calc(100vh - 77px);
+    margin-top: 77px;
+    background-color: #1877f2;
+}
+
+.lf-hd-con p { color: var(--color-theme-01); }
+.lf-hd-con h1 { color: var(--white-color); }
+
 
 /* ==============================================
     Responsive Disign 
