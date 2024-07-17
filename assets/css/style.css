@@ -52,15 +52,40 @@ img { width: 100%; vertical-align: middle; }
     padding: 0 2rem;
 }
 
+.lf-topic p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-theme-01);
+}
+.lf-topic h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--dark-color);
+}
+.lf-topic h1 span { color: var(--color-theme-04); }
+
+
+/* -------------- btn -------------- */
 .lf-btn-theme01 {
     transition: .25s ease;
     color: var(--white-color);
     background-color: var(--color-theme-04);
-    border-radius: 8px;
+    border-radius: 6px;
 }
 .lf-btn-theme01:hover {
     background-color: var(--color-theme-03);
 }
+
+.lf-btn-theme02 {
+    transition: .25s ease;
+    color: var(--white-color);
+    background-color: var(--color-theme-03);
+    border-radius: 6px;
+}
+.lf-btn-theme02:hover {
+    background-color: var(--color-theme-04);
+}
+
 
 
 /*---------------------------------------
@@ -73,6 +98,7 @@ img { width: 100%; vertical-align: middle; }
     width: 100%;
     background-color: var(--white-color);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    z-index: 999;
 }
 
 .lf-nav-logo h1 {
@@ -102,12 +128,20 @@ img { width: 100%; vertical-align: middle; }
 /*---------------------------------------
     HEADER             
 -----------------------------------------*/
+.lf-header {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .lf-hd-con {
     width: 100%;
+    height: 100%;
     height: calc(100vh - 77px);
     margin-top: 77px;
-    background-color: #1877f2;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 .lf-hd-con p { color: var(--color-theme-01); }
 .lf-hd-con h1 { color: var(--white-color); }
@@ -115,15 +149,72 @@ img { width: 100%; vertical-align: middle; }
 .lf-hd-form select { color: var(--description-color); }
 
 .lf-hd-btn-arrow {
+    position: relative;
     width: 30px;
     height: 30px;
     padding: 2rem;
+    margin-top: 3rem;
     border-radius: 50%;
 }
 .lf-hd-btn-arrow i,
 .lf-hd-btn-arrow svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 26px;
 }
+
+
+
+/*---------------------------------------
+    MAIN             
+-----------------------------------------*/
+/* --------------------------------------------------- */
+/* --------- Section 01 | Introduct --------- */
+.lf-sec01-info h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--description-color);
+}
+
+.lf-sec01-info > p {
+    font-size: 18px;
+    padding-top: 1rem;
+    color: var(--description-color);
+}
+
+.lf-sec01-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 3rem;
+}
+
+.lf-sec01-img img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.lf-sec01-img img:nth-child(1) {
+    width: 210px;
+    height: 210px;
+}
+.lf-sec01-img img:nth-child(2) {
+    width: 350px;
+    height: 350px;
+}
+@media screen and (max-width: 1024px) {
+    .lf-sec01-img { margin-top: 3rem; padding: 0; gap: 1rem; }
+    .lf-sec01-img img:nth-child(1) { width: 300px; height: 300px; }
+    .lf-sec01-img img:nth-child(2) { width: 240px; height: 240px; }
+}
+@media screen and (max-width: 640px) {
+    .lf-sec01-img img:nth-child(1) { width: 250px; height: 250px; }
+    .lf-sec01-img img:nth-child(2) { width: 140px; height: 140px; }
+}
+
+
 /* ==============================================
     Responsive Disign 
 ================================================= */
