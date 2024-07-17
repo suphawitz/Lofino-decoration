@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+a { text-decoration: none !important; color: #000; }
+button, input ,select { border: none; background: transparent; outline: none; cursor: pointer; }
+ul, li { list-style: none; }
+img { width: 100%; vertical-align: middle; }
+
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
@@ -45,6 +50,16 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.lf-btn-theme01 {
+    transition: .25s ease;
+    color: var(--white-color);
+    background-color: var(--color-theme-04);
+    border-radius: 8px;
+}
+.lf-btn-theme01:hover {
+    background-color: var(--color-theme-03);
 }
 
 
@@ -97,7 +112,18 @@
 .lf-hd-con p { color: var(--color-theme-01); }
 .lf-hd-con h1 { color: var(--white-color); }
 
+.lf-hd-form select { color: var(--description-color); }
 
+.lf-hd-btn-arrow {
+    width: 30px;
+    height: 30px;
+    padding: 2rem;
+    border-radius: 50%;
+}
+.lf-hd-btn-arrow i,
+.lf-hd-btn-arrow svg {
+    font-size: 26px;
+}
 /* ==============================================
     Responsive Disign 
 ================================================= */
