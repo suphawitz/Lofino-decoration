@@ -263,17 +263,18 @@ img { width: 100%; vertical-align: middle; }
 /* --------- Section 02 | Interior Products --------- */
 .lf-sec02-items {
     position: relative;
-    /* width: 100%; */
-    height: 400px;
+    display: inline-block;
+    /* max-height: 700px; */
     margin: 1rem;
-    overflow: hidden;
+    padding-bottom: 2rem;
 }
 
 .lf-sec02-items img {
     /* position: absolute;
     top: 0;
-    left: 0;
-    object-fit: cover; */
+    left: 0; */
+    border-radius: 20px;
+    /* object-fit: cover; */
 }
 
 .lf-sec02-items .lf-sec02-topright {
@@ -282,19 +283,86 @@ img { width: 100%; vertical-align: middle; }
     right: 20px;
 }
 
+.lf-sec02-topright .lf-sec02-keep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    padding: 1.3rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.lf-sec02-keep i,
+.lf-sec02-keep svg {
+    font-size: 20px;
+    color: var(--description-color);
+    transition: .25s ease-in-out;
+}
+
+.lf-sec02-keep i:hover,
+.lf-sec02-keep svg:hover { color: var(--color-theme-04); }
+
+.lf-sec02-price {
+    position: relative;
+    margin-top: .8rem;
+    padding: .5rem;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    color: var(--color-theme-04);
+    border-radius: 8px;
+    z-index: 2;
+}
+.lf-sec02-price::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 40%;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
 .lf-sec02-items .lf-sec02-more {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
+    color: var(--white-color);
     background-color: var(--color-theme-02);
+    transition: .25s ease;
+    opacity: 0;
 }
 
+.lf-sec02-items .lf-sec02-more p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.lf-sec02-items:hover .lf-sec02-more {
+    opacity: 1;
+}
+.lf-sec02-more:hover {
+    background-color: var(--color-theme-03);
+}
+
+.lf-sec02-items > h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
 
 
 /* ==============================================
