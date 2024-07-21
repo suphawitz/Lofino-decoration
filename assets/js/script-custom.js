@@ -24,3 +24,42 @@ document.addEventListener("DOMContentLoaded", function() {
     // setInterval(changeBackground, duration);
     changeBackground(); // Initial call to set the first background
 });
+
+
+
+// SlickJS 
+$(document).ready(function(){
+
+    // Slider Section 03 | Reviews
+    $('.lf-sec03-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1084,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 774,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+  
+    // $('.es-gallery-slider .slick-prev').html('<i class="fa-solid fa-angle-left"></i>');
+    // $('.es-gallery-slider .slick-next').html('<i class="fa-solid fa-angle-right"></i>');
+  
+  });
