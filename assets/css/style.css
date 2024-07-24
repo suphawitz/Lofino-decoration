@@ -370,7 +370,26 @@ img { width: 100%; vertical-align: middle; }
 
 /* --------------------------------------------------- */
 /* --------- Section 03 | Reviews --------- */
+.lf-sec03 {
+    width: 100%;
+    background-color: #f9f9f9;
+}
 
+.lf-sec03-items {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 24px;
+}
+
+.lf-sec03-items h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.lf-sec03-user {
+    display: flex;
+    align-items: center;
+}
 
 /* ==============================================
     Responsive Disign 
