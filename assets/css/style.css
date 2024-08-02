@@ -376,19 +376,102 @@ img { width: 100%; vertical-align: middle; }
 }
 
 .lf-sec03-items {
-    padding: 2rem;
+    margin-right: 2rem;
     background-color: #fff;
     border-radius: 24px;
+    overflow: hidden;
 }
 
 .lf-sec03-items h1 {
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 3rem 2rem;
+
 }
 
 .lf-sec03-user {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .6rem 1.2rem;
+    z-index: 1;
+    color: #fff;
+    background: linear-gradient(180deg, var(--color-theme-03) 0%, var(--color-theme-04) 100%);
+}
+
+.lf-sec03-user::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 23px;
+
+    width: 0;
+    height: 0;
+    border-bottom: 22px solid var(--color-theme-03);
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+}
+
+.lf-sec03-user p {
+    font-size: 18px;
+}
+
+.lf-sec03-facebook { background-color: #1877F2 !important; }
+
+
+
+/* --------------------------------------------------- */
+/* --------- Section 04 | Contact --------- */
+.lf-sec04-form,
+.lf-sec04-contact {
+    position: relative;
+    padding: 3rem;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.lf-sec04-form {
+    background-color: #eee;
+}
+
+.lf-sec04-contact {
+    color: var(--white-color);
+    background-color: var(--color-theme-03);
+}
+
+.lf-sec04-box {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.lf-sec04-box label { width: max-content !important; margin-right: .6rem; }
+.lf-sec04-box input { width: auto; }
+
+.lf-sec04-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-theme-04);
+}
+.lf-sec04-contact .bx {
+    font-size: 22px;
+    color: var(--color-theme-04);
+}
+
+.lf-footer {
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
 }
 
 /* ==============================================
