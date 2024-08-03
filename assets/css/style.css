@@ -470,9 +470,41 @@ img { width: 100%; vertical-align: middle; }
 
 .lf-footer {
     width: 100%;
-    background-color: #000000;
+    padding-bottom: 4rem;
+    background-color: #36363e;
     color: #fff;
 }
+
+
+.lf-ft-copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 2rem 0;
+    gap: 2rem;
+
+
+    p a {
+        color: var(--color-theme-04);
+    }
+}
+
+.lf-ft-copyright i,
+.lf-ft-copyright svg {
+    font-size: 24px;
+}
+
+.lf-ft-socail a { transition: .25s ease; }
+
+.lf-ft-copyright .lf-ft-socail a:nth-child(1) { color: var(--twitter-color); }
+.lf-ft-copyright .lf-ft-socail a:nth-child(2) { color: var(--facebook-color); }
+.lf-ft-copyright .lf-ft-socail a:nth-child(3) { color: var(--instagram-color); }
+.lf-ft-copyright .lf-ft-socail a:nth-child(4) { color: var(--pinterest-color); }
+.lf-ft-copyright .lf-ft-socail a:nth-child(5) { color: var(--whatsapp-color); }
+
+.lf-ft-socail a:hover { color: #fff !important; }
+
 
 /* ==============================================
     Responsive Disign 
