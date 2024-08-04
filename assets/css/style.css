@@ -443,6 +443,7 @@ img { width: 100%; vertical-align: middle; }
 
 .lf-sec04-box {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 1rem;
     margin-bottom: 1.3rem;
@@ -468,6 +469,19 @@ img { width: 100%; vertical-align: middle; }
     color: var(--color-theme-04);
 }
 
+.lf-sec04-textarea {
+    width: 100%;
+    height: 200px;
+    outline: none;
+    /* resize: none; */
+}
+
+
+
+
+/*---------------------------------------
+    FOOTER             
+-----------------------------------------*/
 .lf-footer {
     width: 100%;
     padding-bottom: 4rem;
@@ -481,6 +495,7 @@ img { width: 100%; vertical-align: middle; }
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-top: 3rem;
     padding: 2rem 0;
     gap: 2rem;
 
