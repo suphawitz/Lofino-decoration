@@ -21,13 +21,34 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // setInterval(changeBackground, duration);
+    setInterval(changeBackground, duration);
     changeBackground(); // Initial call to set the first background
 });
 
 
+// Create class Active nav link on scroll Active menu
+let Kcsections = document.querySelectorAll('.lf-section');
+let KcnavLink = document.querySelectorAll('.lf-nav-menu a');
 
-// SlickJS 
+window.onscroll = () => {
+  Kcsections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 180;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+    // console.log(id);
+
+    if (top >= offset && top < offset + height) {
+      KcnavLink.forEach(links => {
+        links.classList.remove('lf-nav-menu-active');
+        document.querySelector('.lf-nav-menu a[href*=' + id + ']') .classList.add('lf-nav-menu-active');
+      });
+    };
+  });
+};
+
+
+// jQuery
 $(document).ready(function(){
 
     // Slider Section 03 | Reviews
@@ -37,7 +58,7 @@ $(document).ready(function(){
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
           {

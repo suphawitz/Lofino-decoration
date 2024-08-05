@@ -54,11 +54,11 @@
                 </div>
     
                 <div class="lf-nav-menu flex items-center justify-center">
-                    <a class="lf-nav-menu-active" href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Contact</a>
+                    <a class="lf-nav-menu-active" href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -67,14 +67,14 @@
 
 
     <!-- Header -->
-    <header class="lf-header lf-header-slide">
+    <header class="lf-header lf-header-slide lf-section" id="home">
         <div class="lf-hd-con">
             <div class="lf-container h-full">
                 <div class="h-full flex flex-col justify-center items-center">
                     <p class="">Welcome to Lofino Decoration</p>
                     <h1 class="w-2/4 text-6xl font-bold text-center">Decorate your home according to your style.</h1>
 
-                    <form class="lf-hd-form w-full md:w-10/12 xl:w-8/12 flex items-center gap-4 bg-white py-10 px-16 mt-6 rounded" action="#" method="get">
+                    <form class="lf-hd-form w-full md:w-10/12 xl:w-8/12 flex flex-wrap lg:flex-row lg:flex-nowrap items-center gap-4 bg-white py-10 px-16 mt-6 rounded" action="#" method="get">
                         <div class="flex items-center py-3 px-6 border">
                             <label for="">Product</label>
                             <input type="text" class="pl-3" placeholder="Liveing room, Bedroom">
@@ -88,10 +88,10 @@
                                 <option value="1600-2000">$1600 to $2000</option>
                             </select>
                         </div>
-                        <input class="lf-btn-theme01 py-3 w-1/2 md:w-full" type="submit" value="Search">
+                        <input class="lf-btn-theme01 py-3 w-1/2" type="submit" value="Search">
                     </form>
 
-                    <a class="lf-hd-btn-arrow lf-btn-theme02" href="#"><i class='bx bx-down-arrow-alt'></i></a>
+                    <a class="lf-hd-btn-arrow lf-btn-theme02" href="#about"><i class='bx bx-down-arrow-alt'></i></a>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@
     <main>
 
         <!-- Section 01 | Introduct -->
-        <section class="lf-sec01">
+        <section class="lf-sec01 lf-section" id="about">
             <div class="lf-sec01-intro py-36">
                 <div class="lf-container">
                     <div class="flex flex-wrap items-center justify-center">
@@ -142,7 +142,7 @@
 
 
         <!-- Section 02 | Interior Products -->
-        <section class="lf-sec02 w-full py-16">
+        <section class="lf-sec02 lf-section w-full py-16" id="shop">
             <div class="lf-container">
                 <div class="lf-topic">
                     <p>Lofino Design Shop</p>
@@ -249,7 +249,7 @@
 
 
         <!-- Section 03 | Reviews -->
-        <section class="lf-sec03 w-full py-16">
+        <section class="lf-sec03 lf-section w-full py-16" id="reviews">
             <div class="lf-container">
                 <div class="lf-topic">
                     <p>Form customers</p>
@@ -353,7 +353,7 @@
 
 
         <!-- Section 04 | Contact -->
-        <section class="lf-sec04">
+        <section class="lf-sec04 lf-section" id="contact">
             <div class="lf-container">
                 <div class="lf-topic">
                     <p>Ask everything</p>
@@ -361,7 +361,7 @@
                 </div>
 
                 <div class="flex flex-wrap items-start justify-center">
-                    <div class="md:w-6/12 w-full">
+                    <div class="md:w-6/12 w-full mt-5">
                         <div class="lf-sec04-form md:mr-3">
                             <form action="#" method="get">
                                 <div class="flex flex-wrap">
@@ -391,7 +391,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="md:w-6/12 w-full">
+                    <div class="md:w-6/12 w-full mt-5">
                         <div class="lf-sec04-contact md:ml-3">
                             <h1 class="text-4xl font-bold">Store</h1>
                             <div class="flex items-center gap-2 my-4">
@@ -399,7 +399,7 @@
                                 <p class="text-lg">998 Sukunmwith Road, Lampang, Thailand</p>
                             </div>
                             <h1 class="text-4xl font-bold">Contact Info</h1>
-                            <div class="flex gap-5 my-4">
+                            <div class="flex flex-wrap gap-5 my-4">
                                 <div class="flex items-center gap-2">
                                     <i class='bx bx-phone'></i>
                                     <p class="text-lg">022+ 987 5546</p>
@@ -416,8 +416,6 @@
                 </div>
             </div>
         </section>
-
-        
         <!-- End Section 04 | Contact -->
 
     </main>
