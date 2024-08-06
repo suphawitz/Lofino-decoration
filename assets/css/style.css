@@ -88,6 +88,62 @@ img { width: 100%; vertical-align: middle; }
 }
 
 
+.lf-bur-active {
+    display: block !important;
+}
+
+/* Burger menu */
+.lf-burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 2rem;
+    height: 1rem;
+    border: none;
+    outline: none;
+    visibility: visible;
+    z-index: 998;
+}
+.lf-burger-line {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 70%;
+    height: 2.15px;
+    opacity: 1;
+    rotate: 0deg;
+    border-radius: 0.15rem;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+.lf-burger-line:nth-child(1) {
+    top: 0px;
+}
+.lf-burger-line:nth-child(2) {
+    top: 0.5rem;
+    width: 50%;
+}
+.lf-burger-line:nth-child(3) {
+    top: 1rem;
+}
+.lf-nav-bur-active > .lf-burger-line:nth-child(1) {
+    top: 0.5rem;
+    rotate: 135deg;
+}
+.lf-nav-bur-active > .lf-burger-line:nth-child(2) {
+    opacity: 0;
+}
+.lf-nav-bur-active > .lf-burger-line:nth-child(3) {
+    top: 0.5rem;
+    rotate: -135deg;
+}
+
+
+
 
 /*---------------------------------------
   Nav Menu             
@@ -103,6 +159,7 @@ img { width: 100%; vertical-align: middle; }
 }
 
 .lf-nav-logo h1 {
+    padding: 1.2rem 0;
     color: var(--color-theme-03);
 }
 .lf-nav-logo h1 span {
@@ -122,9 +179,42 @@ img { width: 100%; vertical-align: middle; }
 
 .lf-nav-menu-active {
     color: var(--white-color) !important;
-    background-color: var(--color-theme-03);
+    background-color: var(--color-theme-03) !important;
 }
 
+/* ------- nav responsive ------- */
+.lf-menu-active {
+    visibility: hidden;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+}
+
+.lf-menu-active .lf-nav-respon {
+    width: 80%;
+    flex-direction: column;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    background-color: #fff;
+}
+
+.lf-menu-active .lf-nav-respon a { width: 100%; }
+
+.lf-nav-respon-active {
+    visibility: visible;
+    animation: navMenu .35s;
+}
+
+@keyframes navMenu {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    } 
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 /*---------------------------------------
     HEADER             

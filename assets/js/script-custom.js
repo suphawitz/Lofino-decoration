@@ -48,6 +48,28 @@ window.onscroll = () => {
 };
 
 
+// Navbar responsive
+const navBur = document.getElementById('nav-burger');
+const navMenu = document.getElementById('nav-menu');
+
+navBur.addEventListener('click', function() {
+  navBur.classList.toggle('lf-nav-bur-active');
+  navMenu.classList.toggle('lf-nav-respon-active');
+});
+
+function checkScreenSize() {
+  if (window.innerWidth < 1080) {
+    navBur.classList.add('lf-bur-active');
+    navMenu.classList.add('lf-menu-active');
+  } else {
+    navBur.classList.remove('lf-bur-active');
+    navMenu.classList.remove('lf-menu-active');
+  }
+}
+
+checkScreenSize();
+window.addEventListener('resize', checkScreenSize);
+
 // jQuery
 $(document).ready(function(){
 
