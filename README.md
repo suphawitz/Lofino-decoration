@@ -16,7 +16,7 @@ git clone https://github.com/suphawitz/Keptcode-Demo.git
 ```
 
 ## Template your project
- - [Template this website](https://keptcode-demo.netlify.app)
+ - [Template this website](https://lofino.netlify.app)
 
 ![enter image description here](assets/images/Zfullpage.png)
 
